@@ -38,4 +38,4 @@ openssl x509 -fingerprint -sha256 -in config/certs/http_ca.crt
 
 1. You have to configure elasticsearch mentioned before
 2. Pass you connection string to SQL Server database in section ConnectionStrings:DefaultConnection
-3. Run update-database command in package manager console
+3. Run update-database command in package manager console in order to create database

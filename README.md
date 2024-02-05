@@ -21,13 +21,16 @@ openssl x509 -fingerprint -sha256 -in config/certs/http_ca.crt
 ```
 
 5. Open appsettings.json and configure ElasticSearch section values with retrieved items
-   {
-   "Url": "https://localhost:9200",
-   "DefaultIndex": "big-data-orm-app",
-   "CertFingerprint": "from-openssl-script", //example: EE:87:E1:19:03:D7:DC:09:1B:FD:7B:84:8D:68:3A:10:D4:9B:07:08:C3:5E:C2:FD:57:A7:DE:D3:B5:45:9E:E5
-   "Password": "password from step 3"
-   "UserName": "user from step 3, default elastic"
-   }
+
+```json
+{
+  "Url": "https://localhost:9200",
+  "DefaultIndex": "big-data-orm-app",
+  "CertFingerprint": "from-openssl-script", //example: EE:87:E1:19:03:D7:DC:09:1B:FD:7B:84:8D:68:3A:10:D4:9B:07:08:C3:5E:C2:FD:57:A7:DE:D3:B5:45:9E:E5
+  "Password": "password from step 3",
+  "UserName": "user from step 3, default elastic"
+}
+```
 
 6. If needed more information can be found here: https://www.elastic.co/guide/en/elasticsearch/reference/current/run-elasticsearch-locally.html
 
